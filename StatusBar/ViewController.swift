@@ -15,7 +15,10 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func close(_ sender: Any) {
+        NSApp.terminate(sender)
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
